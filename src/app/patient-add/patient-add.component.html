@@ -1,0 +1,35 @@
+<h1>Appointment Form </h1>
+
+<div class="loginSection">
+
+
+    <form [formGroup]="AddForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <input formControlName="name" type="name" id="name" name="name" placeholder="Full Name" class="form-control">
+        </div>
+        <div class="form-group">
+
+
+            <textarea class="form-control" type="text" formControlName="address" placeholder="Address"></textarea>
+        </div>
+        <div class="form-group">
+            <input formControlName="gender" type="text" id="gender" name="gender" placeholder="gender" class="form-control">
+        </div>
+        <div class="form-group">
+            <input formControlName="mobile" type="number" id="mobile" name="mobile" placeholder="mobile" class="form-control">
+        </div>
+        <div class="form-group">
+            <input formControlName="doctorName" type="text" id="doctorName" name="doctorName" placeholder="doctorName" class="form-control">
+        </div>
+        <div class="form-group">
+            <input formControlName="covidStatus" type="text" id="covidStatus" name="covidStatus" placeholder="covidStatus" class="form-control">
+        </div>
+
+        <div class="btn">
+            <button class="btn btn-primary" type="submit" [disabled]="AddForm.invalid">Submit</button>
+
+        </div>
+
+    </form>
+
+</div>

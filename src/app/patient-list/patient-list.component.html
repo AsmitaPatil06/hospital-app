@@ -1,0 +1,37 @@
+<h2>Patient list...</h2>
+
+<div class="header">
+    <div class="name">
+        Name
+    </div>
+
+    <div style="margin-right: 120px; margin-left: 44px;" class="add">
+        Address
+    </div>
+
+    <div style="margin-right:45px;" class="mob">
+        Mobile No
+    </div>
+
+    <div style="margin-right:29px;" class="gen">
+        Gender
+    </div>
+
+    <div style="margin-right:40px;" class="doc">
+        Doctor Name
+    </div>
+
+    <div style="margin-right:48px;" class="status">
+        Covid status
+    </div>
+
+    <div class="adm">
+        Admitted On
+    </div>
+</div>
+
+<app-patient *ngFor=" let p of listOfPatient; let i=index " [patient]="p " [index]="i "></app-patient>
+
+
+<!-- <app-patient *ngFor="let h of header " *ngFor="let p of listOfPatient; let i=index; " [patient]="p " [index]="i " [header]="h "></app-patient> -->
+<!-- <app-patient *ngFor="let h of header " ; [header]="h " *ngFor="let p of listOfPatient; let i=index " [patient]="p " [index]="i "></app-patient> -->

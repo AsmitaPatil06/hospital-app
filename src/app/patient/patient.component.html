@@ -1,0 +1,18 @@
+<table class="table">
+
+    <tbody>
+        <tr>
+            <td>{{ patient.name }}</td>
+            <td>{{ patient.address }}</td>
+            <td>{{ patient.mobile}}</td>
+            <td>{{ patient.gender }}</td>
+            <td>{{ patient.doctorName }}</td>
+            <td>{{ patient.covid }}</td>
+            <td>{{ patient.datetimeCreate |date}}</td>
+
+            <td> <i class="bi bi-pencil-fill" (click)="onEdit()"></i></td>
+            <td><i style="color: rgb(245, 127, 127);" class="bi bi-trash-fill" (click)="onDelete()"></i></td>
+        </tr>
+
+    </tbody>
+</table>

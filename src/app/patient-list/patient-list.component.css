@@ -1,0 +1,21 @@
+.table {
+    width: 900px;
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    /* border-color: gray; */
+    margin-bottom: 0rem;
+}
+
+.header {
+    display: flex;
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 30px;
+}
+
+
+/* .header>h5 {
+    margin-left: 37px;
+    margin-right: 17px;
+} */

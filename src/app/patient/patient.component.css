@@ -1,0 +1,9 @@
+.table {
+    width: 950px;
+    display: table;
+    border-collapse: separate;
+    border-spacing: 1em;
+    /* border: 1px solid; */
+    /* border-color: gray; */
+    border-color: white;
+}
